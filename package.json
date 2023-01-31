@@ -1,0 +1,27 @@
+{
+	"name": "pnpm-nextauth-prisma-turbo-monorepo-issue-reproduction",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "dotenv-flow -- turbo run build",
+		"dev": "dotenv-flow -- turbo run dev --parallel",
+		"dev:app": "dotenv-flow -- turbo dev --filter app",
+		"db:generate": "dotenv-flow -- turbo run db:generate",
+		"db:push": "dotenv-flow -- turbo run db:push"
+	},
+	"devDependencies": {
+		"dotenv-flow-cli": "^1.0.0",
+		"eslint-config-custom": "workspace:*",
+		"prettier": "latest",
+		"prettier-plugin-tailwindcss": "^0.2.2",
+		"turbo": "latest"
+	},
+	"packageManager": "pnpm@7.26.2",
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"prisma": {
+		"schema": "packages/db/prisma/schema.prisma",
+		"seed": "tsx packages/src/seed.ts"
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"name": "app",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev",
+		"lint": "next lint",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@next-auth/prisma-adapter": "^1.0.5",
+		"@tanstack/react-query": "^4.22.0",
+		"@trpc/client": "^10.9.0",
+		"@trpc/next": "^10.9.0",
+		"@trpc/react-query": "^10.9.0",
+		"@trpc/server": "^10.9.0",
+		"database": "workspace:*",
+		"next": "13.1.6",
+		"next-auth": "^4.18.8",
+		"next-superjson-plugin": "^0.5.4",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"superjson": "1.12.2",
+		"zod": "^3.20.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.20.12",
+		"@types/node": "^18.11.18",
+		"@types/prettier": "^2.7.2",
+		"@types/react": "^18.0.27",
+		"@types/react-dom": "^18.0.10",
+		"@typescript-eslint/eslint-plugin": "^5.48.2",
+		"@typescript-eslint/parser": "^5.48.2",
+		"autoprefixer": "^10.4.13",
+		"babel-loader": "^9.1.2",
+		"dotenv-flow-cli": "^1.0.0",
+		"eslint": "^8.33.0",
+		"eslint-config-custom": "workspace:*",
+		"postcss": "^8.4.21",
+		"prettier": "^2.8.3",
+		"prettier-plugin-tailwindcss": "^0.2.1",
+		"tailwindcss": "^3.2.4",
+		"ts-node": "^10.9.1",
+		"tsconfig": "workspace:*",
+		"tsx": "^3.12.2",
+		"typescript": "^4.9.4"
+	},
+	"ct3aMetadata": {
+		"initVersion": "7.2.0"
+	}
+}
